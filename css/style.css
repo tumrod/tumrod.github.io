@@ -862,7 +862,7 @@
 /*********************************************************************************/
 
 	#intro {
-		background: url('images/fulls/747977.jpg'), url('../images/fulls/3D_Fantasy_Land.jpg');
+		background: url('images/overlay.png'), url('../images/fulls/3D_Fantasy_Land.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -874,7 +874,7 @@
 /*********************************************************************************/
 
 	#one {
-		background: url('images/fulls/747977.jpg'), url('../images/fulls/747977.jpg');
+		background: url('images/overlay.png'), url('../images/fulls/747977.jpg');
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
