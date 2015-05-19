@@ -943,7 +943,16 @@
 				#work .row.images.inactive .image.from-bottom {
 					top: 7em;
 				}
+/*********************************************************************************/
+/* Two                                                                           */
+/*********************************************************************************/
 
+	#blog {
+		background: url('images/overlay.png'), url('../images/fulls/bg_intro.jpg');
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
 /*********************************************************************************/
 /* Contact                                                                       */
 /*********************************************************************************/
