@@ -37,7 +37,7 @@
 		}
 
 	body,input,textarea,select {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: 'Times New Roman';
 		font-weight: 300;
 		font-size: 18pt;
 		line-height: 1.75em;
@@ -46,7 +46,8 @@
 	}
 
 	h1,h2,h3,h4,h5,h6 {
-		font-weight: 900;
+		font-family: 'Times New Roman';
+		font-weight: 700;
 		color: inherit;
 	}
 
@@ -56,12 +57,13 @@
 		}
 
 	h2 {
-		font-size: 2.25em;
-		letter-spacing: -2px;
-		line-height: 1.25em;
+		font-size: 2;
+		letter-spacing: -2;
+		line-height: 1.25;
 	}
 
 	strong, b {
+		font-family: 'Times New Roman';
 		font-weight: 900;
 		color: inherit;
 	}
@@ -511,9 +513,10 @@
 			}
 
 				.main.style1 h2 {
-					font-size: 4.25em;
+					font-family: 'Times New Roman';
+					font-size: 4em;
 					line-height: 1em;
-					letter-spacing: -4px;
+					letter-spacing: 8px;
 				}
 
 				.main.style1:before {
@@ -694,7 +697,7 @@
 		body:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
+			font-family: 'Times New Roman';
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -800,13 +803,14 @@
 /*********************************************************************************/
 
 	#header {
+
 		position: fixed;
 		z-index: 10000;
 		left: 0;
 		top: 0;
 		width: 100%;
-		background: #fff;
-		background: rgba(255,255,255,0.95);
+		background: #39454b;
+		color: white;
 		height: 3em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0,0,0,0.1);
@@ -862,7 +866,8 @@
 /*********************************************************************************/
 
 	#intro {
-		background: url('images/overlay.png'), url('../images/fulls/bg_6.jpg');
+		/*background: url('images/overlay.png'), url('../images/fulls/bg_6.jpg');*/
+		background-color: black;
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
