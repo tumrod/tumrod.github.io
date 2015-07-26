@@ -107,7 +107,7 @@
 	}
 
 	p, ul, ol, dl, table {
-		margin-bottom: 1em;
+		margin-bottom: 0em;
 	}
 
 	header {
@@ -866,13 +866,25 @@
 /* Intro                                                                         */
 /*********************************************************************************/
 
-	#intro {
+	#about {
 		/*background: url('images/overlay.png'), url('../images/fulls/bg_6.jpg');*/
 		background-color: black;
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
+	}
+	.user-tumb {
+		width: 4em;
+  		height: 6em;
+  		padding: 0;
+  		text-align: center;
+  		margin: 0 auto;
+  		-webkit-border-radius: 100%;
+  		-moz-border-radius: 100%;
+  		border-radius: 24%;
+  		box-shadow: 1px -2px 40px 6px rgba(81, 69, 69, 0.75);
+		  
 	}
 
 /*********************************************************************************/
