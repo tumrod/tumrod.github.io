@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="our aniversary"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -69,7 +69,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>scanner testing page</title>
+    <title>Clint - Tipp Aniversary 2021</title>
   </head>
   <body>
 
@@ -83,26 +83,49 @@
         renderer='antialias: true; alpha: true; precision: mediump;'
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
-        <a-assets>
+  <a-assets>
+    <video id="vid" autoplay loop="true" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/tumrod/tumrod.github.io/tree/master/vid/clinttippfun.mp4"></video>
+    <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+  </a-assets>
+
+
+        <!--<a-assets>
             <video src="https://cors-anywhere.herokuapp.com/https://www.w3schools.com/html/mov_bbb.mp4"
                 preload="auto" id="vid" response-type="arraybuffer" loop
                 crossorigin webkit-playsinline autoplay muted playsinline>
             </video>
-        </a-assets>
+        </a-assets>-->
 
         <a-nft
             videohandler
-            type='nft' url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/data/dataNFT/pinball'
+            type='nft' url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/tumrod/tumrod.github.io/tree/master/images/arphoto/aniv01'
             smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
         >
-            <a-video
-                src="#vid"
-                position='50 150 -100'
-                width='300'
-                height='175'
-                >
-            </a-video>
+          <a-plane scale = "40 20" position='0 0 -100' rotation="-90 0 0" material='transparent:true;src:#vid' controls></a-plane>
+
+          <!--<a-video src="#vid" 
+          position='0 0 100'
+          width='128%' height='72%' crossorigin="anonymous"></a-video>-->
         </a-nft>
+
+                <a-nft
+      type="nft"
+      url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/trex-image/trex"
+      smooth="true"
+      smoothCount="10"
+      smoothTolerance=".01"
+      smoothThreshold="5"
+    >
+      <!--<a-entity
+        gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
+        scale="5 5 5"
+        position="50 150 0"
+      >
+      </a-entity> -->
+
+      <a-box src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"
+         animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 200; loop: true"></a-box>
+    </a-nft>
     <a-entity camera></a-entity>
   </a-scene>
 </body>
