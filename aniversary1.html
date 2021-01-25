@@ -83,45 +83,29 @@
         renderer='antialias: true; alpha: true; precision: mediump;'
         embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;'>
 
-  <a-assets>
-    <video id="vid" autoplay loop="true" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/tumrod/tumrod.github.io/tree/master/vid/clinttippfun.mp4"></video>
-    <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
-  </a-assets>
-
-
-        <!--<a-assets>
+        <a-assets>
             <video src="https://cors-anywhere.herokuapp.com/https://www.w3schools.com/html/mov_bbb.mp4"
                 preload="auto" id="vid" response-type="arraybuffer" loop
                 crossorigin webkit-playsinline autoplay muted playsinline>
             </video>
-        </a-assets>-->
-
-        <a-nft
-            videohandler
-            type='nft' url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/tumrod/tumrod.github.io/tree/master/images/arphoto/IMG_20200221'
-            smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
-        >
-          <a-plane scale = "40 20" position='0 0 -100' rotation="-90 0 0" material='transparent:true;src:#vid' controls></a-plane>
-
-          <!--<a-video src="#vid" 
-          position='0 0 100'
-          width='128%' height='72%' crossorigin="anonymous"></a-video>-->
-        </a-nft>
+        </a-assets>
 
         <a-nft
             videohandler
             type='nft' url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/data/dataNFT/pinball'
             smooth="true" smoothCount="10" smoothTolerance="0.01" smoothThreshold="5"
         >
-          <a-plane scale = "40 20" position='0 0 -100' rotation="-90 0 0" material='transparent:true;src:#vid' controls></a-plane>
-
-          <!--<a-video src="#vid" 
-          position='0 0 100'
-          width='128%' height='72%' crossorigin="anonymous"></a-video>-->
+            <a-video
+                src="#vid"
+                position='50 150 -100'
+                width='300'
+                height='175'
+                >
+            </a-video>
         </a-nft>
-
     <a-entity camera></a-entity>
   </a-scene>
+
 </body>
     <!--
       This HTML file is a template.
